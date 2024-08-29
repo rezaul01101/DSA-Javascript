@@ -61,6 +61,6 @@ const itemGetByIndex = myNewArray.get(0);
 
 // const firstItemRemove = myNewArray.shift();
 
-const deleteByIndex = myNewArray.delete(1);
+// const deleteByIndex = myNewArray.delete(1);
 
 console.log(myNewArray);
