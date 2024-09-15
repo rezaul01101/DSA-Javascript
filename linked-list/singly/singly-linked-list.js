@@ -150,6 +150,21 @@ class LinkedList {
     this.length++;
     return true;
   }
+
+  size() {
+    let counter = 0;
+    let temp = this.head;
+
+    while (temp) {
+      counter++;
+      temp = temp.next;
+    }
+    return counter;
+  }
+
+  clear() {
+    this.head = null;
+  }
 }
 
 const myLinkedList = new LinkedList(8);
@@ -166,5 +181,8 @@ myLinkedList.push(15);
 // console.log(myLinkedList.getLastElement());
 // console.log(myLinkedList.get(1));
 // console.log(myLinkedList.set(2));
-myLinkedList.insert(2,4);
-console.log(myLinkedList.get(2));
+// myLinkedList.insert(2, 4);
+// console.log(myLinkedList.get(2));
+// console.log(myLinkedList.size());
+// console.log(myLinkedList.clear());
+// console.log(myLinkedList.size());
